@@ -3,17 +3,11 @@ kind: workflow
 name: prod
 on:
   workflow_dispatch:
-
 jobs:
   deploy:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
-          labels: Go-thu-oct-29
-          artifact-id: e777d622-42cb-4ac2-bd67-5f920b50afdf
-          target-environment: ecr-qa      
-      - uses: cloudbees-io/register-deployed-artifact@v2
-        with:
-          labels: pre-prod
-          artifact-id: e777d622-42cb-4ac2-bd67-5f920b50afdf
-          target-environment: aspm-pre-production
+          labels: nexus
+          artifact-id: 4bfe85fc-911a-4b72-80d6-9effca576a0f
+          target-environment: QA
