@@ -9,5 +9,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: nexus
-          artifact-id: 4bfe85fc-911a-4b72-80d6-9effca576a0f
+          artifact-id: 395124e4-3020-4b10-9cf2-4c7c766e7c97
           target-environment: QA
