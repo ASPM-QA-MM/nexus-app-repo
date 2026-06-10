@@ -11,3 +11,13 @@ jobs:
           labels: nexus
           artifact-id: 395124e4-3020-4b10-9cf2-4c7c766e7c97
           target-environment: QA
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: nexus
+          artifact-id: 8d3ee076-7753-4fc7-995d-260f467749d5
+          target-environment: nexus-ci
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: nexus
+          artifact-id: 395124e4-3020-4b10-9cf2-4c7c766e7c97
+          target-environment: nexus-jenkins
